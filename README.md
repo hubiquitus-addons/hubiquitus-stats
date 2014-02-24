@@ -1,4 +1,3 @@
-hubiquitus-stats
-================
+# hubiquitus-stats
 
 Hubiquitus stats module
