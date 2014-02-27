@@ -3,7 +3,7 @@ var logger = hubiquitus.logger('hubiquitus:core:samples');
 hubiquitus.logger.enable('hubiquitus:*');
 var stats = require(__dirname + '/../index');
 
-stats.start({stats: {enabled: 'true', host: 'localhost', port: 5555}});
+stats.start({host: 'localhost', port: 7777});
 
 hubiquitus.start({discoveryAddr: 'udp://224.0.0.1:5555'})
   .set('name', 'launcher1')
