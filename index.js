@@ -33,7 +33,7 @@ function listener(req) {
 }
 
 function sendStats() {
-  var buffer = new Buffer(JSON.stringify({id: properties.ID, counts: counts}));
+  var buffer = new Buffer(JSON.stringify({id: properties.ID, name: properties.name, counts: counts}));
   counts = {'global': 0};
   socket.send(buffer, 0, buffer.length, port, host, function (err) {
     err && logger.error('error sending stats', err);
