@@ -15,7 +15,7 @@ var counts = {
 exports.start = function (options) {
   options = options || {};
   host = options.host || 'localhost';
-  port = options.port || 5555;
+  port = options.port || 7777;
   loop && clearInterval(loop);
   hubiquitus.monitoring.on('req sent', listener);
   loop = setInterval(sendStats, 1000);
